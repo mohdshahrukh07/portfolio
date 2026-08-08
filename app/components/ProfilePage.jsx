@@ -1,7 +1,7 @@
 "use client"
 import Image from "next/image";
 import bgImage from "../../public/bgimage.webp";
-import Profile from "../../public/myprofile.png";
+import Profile from "../assets/myprofile.png";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import Shape4 from '../../public/shape4.png'
