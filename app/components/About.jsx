@@ -65,8 +65,10 @@ export default function About() {
     return (
         <div className="w-full h-auto flex justify-center items-center  bg-[#f2f9fd] p-2 py-5 pt-10 pb-10">
 
-            <div className=" w-full max-w-7xl h-auto flex justify-center items-center py-2 mt-4">
-                <div className="w-[45%] flex justify-center items-center h-full ">
+            <div className=" w-full max-w-7xl h-auto flex justify-center items-center py-2 mt-4
+                max-sm:flex-col">
+                <div className="w-[45%] flex justify-center items-center h-full 
+                    max-sm:w-full">
                     <div className="w-[85%] relative isolate">
                         <div style={{ perspective: 1000 }}>
                             <motion.div
@@ -155,10 +157,12 @@ export default function About() {
                         </motion.div>
                     </div>
                 </div>
-                <div className="w-[55%] h-full  px-3">
-                    <div className="px-5 m-5">
+                <div className="w-[55%] h-full  px-3
+                                max-sm:w-full">
+                    <div className="pl-5 m-5 max-sm:m-0 max-sm:px-0">
                         <h3 className="text-xl text-[#80db66] tracking-[0.25em] font-normal">ABOUT ME</h3>
-                        <h1 className="text-6xl text-gray-800 font-medium py-4">I Develop System that Works</h1>
+                        <h1 className="text-6xl text-gray-800 font-medium py-4
+                                max-sm:text-3xl">I Develop System that Works</h1>
                         <p className="text-[#4d4d75] mt-4 text-xl font-normal">
                             I build reliable and scalable systems using Laravel REST APIs, MySQL, Node.js, and Python. My focus is on creating clean, secure, and high-performance backend solutions that are easy to maintain and built for real-world applications.
                             <span className="mt-6 block">
@@ -166,32 +170,33 @@ export default function About() {
                             </span>
                         </p>
                         <hr className="border-t-[1px] border-[#b7b7c5] mt-6" />
-                        <div className="grid grid-cols-2 gap-10 mt-6">
+                        <div className="grid grid-cols-2 gap-10 mt-6
+                                max-sm:grid-cols-1 max-sm:gap-2">
                             <div className="flex flex-col justify-start items-start gap-2">
                                 <div className="w-82 flex justify-start items-center gap-2">
-                                    <div className="w-30 text-lg text-gray-800 font-medium">Name</div>
+                                    <div className="w-28 text-lg text-gray-800 font-medium">Name</div>
                                     <span className="text-[#4d4d75] text-lg font-normal">Mohd Shahrukh</span>
                                 </div>
                                 <div className="w-82 flex justify-start items-center gap-2">
-                                    <div className="w-30 text-lg text-gray-800 font-medium">Age</div>
+                                    <div className="w-28 text-lg text-gray-800 font-medium">Age</div>
                                     <span className="text-[#4d4d75] text-lg font-normal">25 Years</span>
                                 </div>
                                 <div className="w-82 flex justify-start items-center gap-2">
-                                    <div className="w-30 text-lg text-gray-800 font-medium">Email</div>
-                                    <span className="text-[#4d4d75] items-start text-lg font-normal">mohd800021@<br />gmail.com</span>
+                                    <div className="w-28 text-lg text-gray-800 font-medium">Email</div>
+                                     <span className="min-w-0 flex-1 text-[#4d4d75] text-lg font-normal">mohd800021@gmail.com</span>
                                 </div>
                             </div>
                             <div className="flex flex-col justify-start items-start gap-2">
                                 <div className="w-82 flex justify-start items-center gap-2">
-                                    <div className="w-30 text-lg text-gray-800 font-medium">Occupation</div>
+                                    <div className="w-28 text-lg text-gray-800 font-medium">Occupation</div>
                                     <span className="text-[#4d4d75] text-lg font-normal">Software Developer</span>
                                 </div>
                                 <div className="w-82 flex justify-start items-center gap-2">
-                                    <div className="w-30 text-lg text-gray-800 font-medium">Nationality</div>
+                                    <div className="w-28 text-lg text-gray-800 font-medium">Nationality</div>
                                     <span className="text-[#4d4d75] text-lg font-normal">Indian</span>
                                 </div>
                                 <div className="w-82 flex justify-start items-center gap-2">
-                                    <div className="w-30 text-lg text-gray-800 font-medium">Address</div>
+                                    <div className="w-28 text-lg text-gray-800 font-medium">Address</div>
                                     <span className="text-[#4d4d75] text-lg font-normal">Jodhpur, Rajasthan</span>
                                 </div>
                             </div>
