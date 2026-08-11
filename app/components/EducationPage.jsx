@@ -69,7 +69,7 @@ export default function EducationPage() {
         rotateY.set(0);
     };
     return (
-        <div className="w-full h-auto flex justify-center items-center  bg-[#f2f9fd] p-2 py-5 pt-10 pb-10">
+        <div className="w-full h-auto flex justify-center items-center  bg-[#f2f9fd] p-2 py-12">
 
             <div className=" w-full max-w-7xl h-auto flex justify-center items-start py-2 mt-4 max-lg:flex-col max-lg:gap-5">
                 <div className="w-[55%] h-full px-5 max-lg:w-full max-lg:px-2">
