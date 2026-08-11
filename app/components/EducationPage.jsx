@@ -71,8 +71,8 @@ export default function EducationPage() {
     return (
         <div className="w-full h-auto flex justify-center items-center  bg-[#f2f9fd] p-2 py-5 pt-10 pb-10">
 
-            <div className=" w-full max-w-7xl h-auto flex justify-center items-start py-2 mt-4">
-                <div className="w-[55%] h-full px-5">
+            <div className=" w-full max-w-7xl h-auto flex justify-center items-start py-2 mt-4 max-lg:flex-col max-lg:gap-5">
+                <div className="w-[55%] h-full px-5 max-lg:w-full max-lg:px-2">
                     <div className="">
                         <h3 className="text-xl text-[#80db66] tracking-[0.25em] font-normal pt-0">Education &  Experience</h3>
                         <h1 className="text-3xl text-gray-800 font-medium py-4">My Education</h1>
@@ -85,14 +85,15 @@ export default function EducationPage() {
                         onMouseLeave={() => {
                             setHover(false);
                         }}>
-                        <div className="h-auto flex justify-start items-start gap-5">
-                            <div className="w-18 h-18 rounded-lg flex justify-center items-start border-1 border-[#80db66] bg-[#80db66] group-hover:bg-white  transition-all duration-300 ease-in-out">
+                        <div className="h-auto flex justify-start items-start gap-5 max-lg:gap-2">
+                            <div className="w-18 h-18 rounded-lg flex justify-center items-start border-1 border-[#80db66] bg-[#80db66] group-hover:bg-white  transition-all duration-300 ease-in-out
+                                            max-sm:w-15 max-sm:h-15">
                                 <div className="rounded-full mt-2 group-hover:[transform:rotateY(360deg)] transition-all duration-300 ease-in-out">
                                     <EducationIcon hover={hover} />
                                 </div>
                             </div>
                         </div>
-                        <div className="w-full h-auto px-4">
+                        <div className="w-full h-auto px-4 max-lg:px-1">
                             <h1 className="text-2xl text-gray-800 font-medium"> Masters in Computer Applications </h1>
                             <h3 className="text-lg text-gray-800 pt-2 font-medium">Lachoo Memorial College Jodhpur<span className="text-gray-400 font-normal text-center">（ 2024 - 2026 ）</span></h3>
                             <p className="text-[#4d4d75] text-lg mt-4 text-lg font-normal">Ludantium totam rem aperia meaque ipsa quae ab illo inven tore veritatis et quasi architecto beatae vitae.</p>
@@ -105,14 +106,15 @@ export default function EducationPage() {
                         onMouseLeave={() => {
                             setHover2(false);
                         }}>
-                        <div className="h-auto flex justify-start items-start gap-5">
-                            <div className="w-18 h-18 rounded-lg flex justify-center items-start border-1 border-[#80db66] bg-[#80db66] group-hover:bg-white  transition-all duration-300 ease-in-out">
+                        <div className="h-auto flex justify-start items-start gap-5 max-lg:gap-2">
+                            <div className="w-18 h-18 rounded-lg flex justify-center items-start border-1 border-[#80db66] bg-[#80db66] group-hover:bg-white  transition-all duration-300 ease-in-out
+                             max-sm:w-15 max-sm:h-15 ">
                                 <div className="rounded-full mt-2 group-hover:[transform:rotateY(360deg)] transition-all duration-300 ease-in-out">
                                     <EducationIcon hover={hover2} />
                                 </div>
                             </div>
                         </div>
-                        <div className="w-full h-auto px-4">
+                        <div className="w-full h-auto px-4 max-lg:px-1">
                             <h1 className="text-2xl text-gray-800 font-medium"> Bachler's in Computer Applications </h1>
                             <h3 className="text-lg text-gray-800 pt-2 font-medium">Aishwarya College Of Edu. Jodhpur<span className="text-gray-400 font-normal text-center">（ 2021 - 2024 ）</span></h3>
                             <p className="text-[#4d4d75] text-lg mt-4 text-lg font-normal">Ludantium totam rem aperia meaque ipsa quae ab illo inven tore veritatis et quasi architecto beatae vitae.</p>
@@ -127,21 +129,22 @@ export default function EducationPage() {
                         onMouseLeave={() => {
                             setHover3(false);
                         }}>
-                        <div className="h-auto flex justify-start items-start gap-5">
-                            <div className="w-18 h-18 rounded-lg flex justify-center items-start border-1 border-[#80db66] bg-[#80db66] group-hover:bg-white  transition-all duration-300 ease-in-out">
+                        <div className="h-auto flex justify-start items-start gap-5 max-lg:gap-2">
+                            <div className="w-18 h-18 rounded-lg flex justify-center items-start border-1 border-[#80db66] bg-[#80db66] group-hover:bg-white  transition-all duration-300 ease-in-out
+                            max-sm:w-15 max-sm:h-15">
                                 <div className="rounded-full mt-2 group-hover:[transform:rotateY(360deg)] transition-all duration-300 ease-in-out">
                                     <BagIcon hover={hover3} />
                                 </div>
                             </div>
                         </div>
-                        <div className="w-full h-auto px-4">
+                        <div className="w-full h-auto px-4 max-lg:px-1">
                             <h1 className="text-2xl text-gray-800 font-medium"> Laravel Developer </h1>
                             <h3 className="text-lg text-gray-800 pt-2 font-medium">Microlent Systems PVT. LTD<span className="text-gray-400 font-normal text-center">（ 2024 - 2025 ）</span></h3>
                             <p className="text-[#4d4d75] text-lg mt-4 text-lg font-normal">Ludantium totam rem aperia meaque ipsa quae ab illo inven tore veritatis et quasi architecto beatae vitae.</p>
                         </div>
                     </div>
                 </div>
-                <div className="w-[45%] flex justify-center items-center h-full ">
+                <div className="w-[45%] flex justify-center items-center h-full max-lg:w-full">
                     <div className="w-[85%] relative isolate">
                         <div style={{ perspective: 1000 }}>
                             <motion.div

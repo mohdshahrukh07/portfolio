@@ -29,7 +29,7 @@ export default function Stripe() {
                 {loopItems.map((item, i) => (
                     <div
                         key={i}
-                        className="px-8 text-8xl font-bold font-medium text-gray-800 whitespace-nowrap"
+                        className="px-8 text-8xl font-bold font-medium text-gray-800 whitespace-nowrap max-lg:text-5xl"
                     >
 
                         {item}
@@ -48,7 +48,7 @@ export default function Stripe() {
                 {loopItems2.map((item, i) => (
                     <div
                         key={i}
-                        className="px-8 text-8xl font-bold text-[#f2f9fd] font-medium whitespace-nowrap  text-shadow-[0px_0px_7px_black] "
+                        className="px-8 text-8xl font-bold text-[#f2f9fd] font-medium whitespace-nowrap  text-shadow-[0px_0px_7px_black] max-lg:text-5xl "
                     >
 
                         {item}
