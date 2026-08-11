@@ -24,7 +24,7 @@ export default function ProfilePage(){
               <div className="w-[50%] px-2 max-sm:w-full max-sm:flex max-sm:flex-col max-sm:items-center max-sm:justify-center max-sm:h-screen">
                 <h1 className="text-[#81da65] text-3xl px-1 max-sm:text-xl">HELLO I' M</h1>
                 <h1 className="text-white text-[100px] leading-none pt-2 max-sm:text-5xl max-sm:font-medium">Mohd <span className="px1">Shahrukh</span></h1>
-                <h1 className="text-white text-2xl font-medium px-1 py-4 max-sm:xl" >A Passionate
+                <h1 className="text-white text-2xl font-medium px-1 py-4 max-sm:lg max-sm:flex max-sm:flex-col max-sm:items-center max-sm:gap-3" >A Passionate
                   <span className="text-[#81da65] text-3xl">
                     <TypeAnimation
                       sequence={[

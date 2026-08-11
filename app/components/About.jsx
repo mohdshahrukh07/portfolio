@@ -66,9 +66,9 @@ export default function About() {
         <div className="w-full h-auto flex justify-center items-center  bg-[#f2f9fd] p-2 py-5 pt-10 pb-10">
 
             <div className=" w-full max-w-7xl h-auto flex justify-center items-center py-2 mt-4
-                max-sm:flex-col">
+                max-lg:flex-col max-lg:gap-25">
                 <div className="w-[45%] flex justify-center items-center h-full 
-                    max-sm:w-full">
+                    max-lg:w-full">
                     <div className="w-[85%] relative isolate">
                         <div style={{ perspective: 1000 }}>
                             <motion.div
@@ -158,11 +158,11 @@ export default function About() {
                     </div>
                 </div>
                 <div className="w-[55%] h-full  px-3
-                                max-sm:w-full">
+                                max-lg:w-full">
                     <div className="pl-5 m-5 max-sm:m-0 max-sm:px-0">
                         <h3 className="text-xl text-[#80db66] tracking-[0.25em] font-normal">ABOUT ME</h3>
                         <h1 className="text-6xl text-gray-800 font-medium py-4
-                                max-sm:text-3xl">I Develop System that Works</h1>
+                                max-sm:text-4xl">I Develop System that Works</h1>
                         <p className="text-[#4d4d75] mt-4 text-xl font-normal">
                             I build reliable and scalable systems using Laravel REST APIs, MySQL, Node.js, and Python. My focus is on creating clean, secure, and high-performance backend solutions that are easy to maintain and built for real-world applications.
                             <span className="mt-6 block">
