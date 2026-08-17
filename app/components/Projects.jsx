@@ -12,7 +12,7 @@ export default function Projets() {
         },
         {
             id: 2,
-            heading: "DEVELOPMENT",
+            heading: "COMPLERE",
             title: "Quality Compliance Platform",
         },
         {
