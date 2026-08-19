@@ -66,7 +66,9 @@ export default function About() {
 
     return (
         <div
+            id="about"
             className="
+            scrolling-smooth
                 w-full
                 max-w-full
                 h-auto

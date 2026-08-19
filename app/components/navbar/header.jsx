@@ -5,12 +5,12 @@ import { useEffect, useState } from "react";
 
 export default function Header() {
     const navLinks = [
-        { name: "Home", href: "#" },
-        { name: "About", href: "#" },
-        { name: "Works", href: "#" },
-        { name: "Service", href: "#" },
-        { name: "Contact", href: "#" },
-        { name: "Blog", href: "#" },
+        { name: "Home", href: "/" },
+        { name: "About", href: "about" },
+        { name: "Works", href: "works" },
+        { name: "Skills", href: "skills" },
+        { name: "Contact", href: "contact" },
+        // { name: "Blog", href: "#" },
     ];
 
     const [selected, setSelected] = useState(navLinks[0].name);
@@ -50,6 +50,18 @@ export default function Header() {
     const handleLinkClick = (name) => {
         setSelected(name);
         setIsMenuOpen(false);
+
+        const id = name.toLowerCase();
+        const element = document.getElementById(id);
+
+        if (element) {
+            element.scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+            });
+
+            window.history.replaceState(null, "", `#${id}`);
+        }
     };
 
     return (
@@ -67,10 +79,9 @@ export default function Header() {
                     duration-300
                     ease-in-out
 
-                    ${
-                        isScrolled
-                            ? "bg-[#272730]/95 backdrop-blur-md"
-                            : "bg-transparent"
+                    ${isScrolled
+                        ? "bg-[#272730]/95 backdrop-blur-md"
+                        : "bg-transparent"
                     }
                 `}
             >
@@ -87,10 +98,9 @@ export default function Header() {
                         duration-300
                         ease-in-out
 
-                        ${
-                            isScrolled
-                                ? "h-20"
-                                : "h-24 sm:h-28 lg:h-32"
+                        ${isScrolled
+                            ? "h-20"
+                            : "h-24 sm:h-28 lg:h-32"
                         }
                     `}
                 >
@@ -113,10 +123,9 @@ export default function Header() {
                                 duration-300
                                 ease-in-out
 
-                                ${
-                                    isScrolled
-                                        ? "h-9 w-9 text-lg"
-                                        : "h-10 w-10 text-xl sm:h-11 sm:w-11 sm:text-2xl"
+                                ${isScrolled
+                                    ? "h-9 w-9 text-lg"
+                                    : "h-10 w-10 text-xl sm:h-11 sm:w-11 sm:text-2xl"
                                 }
                             `}
                         >
@@ -131,10 +140,9 @@ export default function Header() {
                                 duration-300
                                 ease-in-out
 
-                                ${
-                                    isScrolled
-                                        ? "text-lg sm:text-xl"
-                                        : "text-xl sm:text-2xl lg:text-3xl"
+                                ${isScrolled
+                                    ? "text-lg sm:text-xl"
+                                    : "text-xl sm:text-2xl lg:text-3xl"
                                 }
                             `}
                         >
@@ -146,7 +154,7 @@ export default function Header() {
                         {navLinks.map((item) => (
                             <Link
                                 key={item.name}
-                                href={item.href}
+                                href={`#`+ item.href}
                                 onClick={() =>
                                     handleLinkClick(item.name)
                                 }
@@ -156,10 +164,9 @@ export default function Header() {
                                     transition
                                     duration-300
 
-                                    ${
-                                        selected === item.name
-                                            ? "text-lime-500"
-                                            : "text-white hover:text-lime-500"
+                                    ${selected === item.name
+                                        ? "text-lime-500"
+                                        : "text-white hover:text-lime-500"
                                     }
                                 `}
                             >
@@ -181,10 +188,9 @@ export default function Header() {
                                 hover:bg-lime-500
                                 hover:text-black
 
-                                ${
-                                    isScrolled
-                                        ? "px-4 py-2"
-                                        : "px-7 py-3"
+                                ${isScrolled
+                                    ? "px-4 py-2"
+                                    : "px-7 py-3"
                                 }
                             `}
                         >
@@ -256,10 +262,9 @@ export default function Header() {
                     duration-300
                     lg:hidden
 
-                    ${
-                        isMenuOpen
-                            ? "visible opacity-100"
-                            : "invisible opacity-0"
+                    ${isMenuOpen
+                        ? "visible opacity-100"
+                        : "invisible opacity-0"
                     }
                 `}
             />
@@ -284,10 +289,9 @@ export default function Header() {
                     ease-in-out
                     lg:hidden
 
-                    ${
-                        isMenuOpen
-                            ? "translate-x-0"
-                            : "-translate-x-full"
+                    ${isMenuOpen
+                        ? "translate-x-0"
+                        : "-translate-x-full"
                     }
                 `}
             >
@@ -361,7 +365,7 @@ export default function Header() {
                     {navLinks.map((item, index) => (
                         <Link
                             key={item.name}
-                            href={item.href}
+                            href={`#` + item.href}
                             onClick={() =>
                                 handleLinkClick(item.name)
                             }
@@ -374,10 +378,9 @@ export default function Header() {
                                 transition-all
                                 duration-300
 
-                                ${
-                                    selected === item.name
-                                        ? "pl-2 text-lime-500"
-                                        : "text-white hover:pl-2 hover:text-lime-500"
+                                ${selected === item.name
+                                    ? "pl-2 text-lime-500"
+                                    : "text-white hover:pl-2 hover:text-lime-500"
                                 }
                             `}
                         >

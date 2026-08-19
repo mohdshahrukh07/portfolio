@@ -3,7 +3,9 @@ import LocationIcon from "./icons/locationIcon"
 import MailIcon from "./icons/mailIcon"
 export default function ContactPage() {
     return (
-        <section className="w-full bg-[#eef1f7] py-16 px-5">
+        <section id="contact"
+            className="
+            scrolling-smooth w-full bg-[#eef1f7] py-16 px-5">
             <div className="max-w-7xl mx-auto">
 
                 {/* Heading */}

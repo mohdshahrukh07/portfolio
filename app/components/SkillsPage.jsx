@@ -94,7 +94,9 @@ export default function EducationPage() {
     ]
 
     return (
-        <div className="
+        <div id="skills"
+            className="
+            scrolling-smooth
             w-full
             min-h-screen
             flex
