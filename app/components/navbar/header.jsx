@@ -68,7 +68,9 @@ export default function Header() {
     const link = document.createElement("a")
     link.href = "/assets/MOHD_SHAHRUKH_RESUME.pdf"
     link.download = "MOHD_SHAHRUKH_RESUME.pdf"
+    document.body.appendChild(link)
     link.click()
+    document.body.removeChild(link)
     setTimeout(() => {
       setDownloading(false);
     }, 1500);
@@ -211,6 +213,7 @@ export default function Header() {
                     <div className="flex items-center gap-2 lg:hidden">
                         {/* Download CV */}
                         <button
+                            onClick={handleDownload}
                             className={`
                                 rounded-md
                                 border
@@ -228,7 +231,7 @@ export default function Header() {
                                 hover:text-black
                             `}
                         >
-                            DOWNLOAD CV
+                            {downloading ? "DOWNLOADING..." : "DOWNLOAD CV"}
                         </button>
 
                         {/* Hamburger */}
