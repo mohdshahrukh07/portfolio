@@ -66,7 +66,7 @@ export default function Header() {
   const handleDownload =() => {
     setDownloading(true);
     const link = document.createElement("a")
-    link.href = "/assets/MOHD_SHAHRUKH_RESUME.pdf"
+    link.href = "./assets/MOHD_SHAHRUKH_RESUME.pdf"
     link.download = "MOHD_SHAHRUKH_RESUME.pdf"
     document.body.appendChild(link)
     link.click()
