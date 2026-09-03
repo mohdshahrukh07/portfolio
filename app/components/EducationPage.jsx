@@ -274,9 +274,7 @@ export default function EducationPage() {
                                     max-md:text-base
                                 "
                             >
-                                Ludantium totam rem aperia meaque ipsa quae
-                                ab illo inven tore veritatis et quasi
-                                architecto beatae vitae.
+                                Focused on software development, programming, databases, and modern web technologies.
                             </p>
                         </div>
                     </div>
@@ -419,9 +417,7 @@ export default function EducationPage() {
                                     max-md:text-base
                                 "
                             >
-                                Ludantium totam rem aperia meaque ipsa quae
-                                ab illo inven tore veritatis et quasi
-                                architecto beatae vitae.
+                                Built a strong foundation in programming, databases, computer science, and web development.
                             </p>
                         </div>
                     </div>
@@ -593,9 +589,7 @@ export default function EducationPage() {
                                     max-md:text-base
                                 "
                             >
-                                Ludantium totam rem aperia meaque ipsa quae
-                                ab illo inven tore veritatis et quasi
-                                architecto beatae vitae.
+                                Worked with Laravel, REST APIs, MySQL, and modern frontend technologies to build web applications.
                             </p>
                         </div>
                     </div>

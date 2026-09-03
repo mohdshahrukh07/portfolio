@@ -37,7 +37,7 @@ export default function ContactPage() {
                                 </h3>
 
                                 <p className="text-gray-600 text-lg mt-2">
-                                    20 Bordeshi, London, USA
+                                    Jodhpur, Rajasthan, India
                                 </p>
                             </div>
                         </div>
@@ -53,7 +53,7 @@ export default function ContactPage() {
                                 </h3>
 
                                 <p className="text-gray-600 text-ml mt-2">
-                                    +123 456 7890
+                                    +91 9079471457
                                 </p>
                             </div>
                         </div>
@@ -69,7 +69,7 @@ export default function ContactPage() {
                                 </h3>
 
                                 <p className="text-gray-600 text-lg mt-2">
-                                    hello@thames.com
+                                    mohd800021@gmail.com
                                 </p>
                             </div>
                         </div>

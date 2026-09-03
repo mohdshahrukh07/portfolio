@@ -64,6 +64,13 @@ export default function About() {
         rotateY.set(0);
     };
 
+    const handleDownload = () => {
+        const link = document.createElement("a")
+        link.href = "/assets/MOHD_SHAHRUKH_RESUME.pdf"
+        link.download = "MOHD_SHAHRUKH_RESUME.pdf"
+        link.click()
+    }
+
     return (
         <div
             id="about"
@@ -324,6 +331,7 @@ export default function About() {
                                     }}
                                 >
                                     <Image
+                                        onClick={handleDownload}
                                         src={downloadBg}
                                         width={270}
                                         height={270}
@@ -798,11 +806,18 @@ export default function About() {
                                 <span className="bg-[#2b2b2b] text-white px-3 py-1 rounded-lg text-sm">
                                     JavaScript
                                 </span>
-
+                                <span className="bg-[#2b2b2b] text-white px-3 py-1 rounded-lg text-sm">
+                                    Node JS
+                                </span>
                                 <span className="bg-[#2b2b2b] text-white px-3 py-1 rounded-lg text-sm">
                                     Python
                                 </span>
-
+                                <span className="bg-[#2b2b2b] text-white px-3 py-1 rounded-lg text-sm">
+                                    Django
+                                </span>
+                                <span className="bg-[#2b2b2b] text-white px-3 py-1 rounded-lg text-sm">
+                                    PHP
+                                </span>
                                 <span className="bg-[#2b2b2b] text-white px-3 py-1 rounded-lg text-sm">
                                     Laravel
                                 </span>
@@ -813,14 +828,6 @@ export default function About() {
 
                                 <span className="bg-[#2b2b2b] text-white px-3 py-1 rounded-lg text-sm">
                                     Git
-                                </span>
-
-                                <span className="bg-[#2b2b2b] text-white px-3 py-1 rounded-lg text-sm">
-                                    Express JS
-                                </span>
-
-                                <span className="bg-[#2b2b2b] text-white px-3 py-1 rounded-lg text-sm">
-                                    Node JS
                                 </span>
                             </div>
                         </div>

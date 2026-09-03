@@ -84,14 +84,14 @@ export default function Footer() {
 
             <div className="flex gap-3">
               <a
-                href="#"
+                href="https://github.com/mohdshahrukh07"
                 className="rounded-full border p-3 transition bg-lime-600 hover:text-white"
               >
                 <GithubIcon />
               </a>
 
               <a
-                href="#"
+                href="https://www.linkedin.com/in/mohd-shahrukh-sam "
                 className="rounded-full border p-3 transition bg-lime-600 hover:text-white"
               >
                 <LinkdinIcon  />
@@ -105,7 +105,7 @@ export default function Footer() {
               </a>
 
               <a
-                href="mailto:hello@email.com"
+                href="mailto:mohd800021@gmail.com"
                 className="rounded-full border p-3 transition bg-lime-600 hover:text-white"
               >
                 <MailIcon />

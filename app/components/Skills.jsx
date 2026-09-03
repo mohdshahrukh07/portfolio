@@ -14,7 +14,7 @@ export default function Skills() {
             id: 1,
             title: "Web Development",
             content:
-                "Seaque ipsa quae ab illo inven tore veritatis et qua si architecto beatae atis et sopno vitae.",
+                "Building responsive and user-friendly web applications using modern technologies and clean development practices.",
             img: serIcon,
             pos: "self-start",
         },
@@ -22,7 +22,7 @@ export default function Skills() {
             id: 2,
             title: "Software Development",
             content:
-                "Seaque ipsa quae ab illo inven tore veritatis et qua si architecto beatae atis et sopno vitae.",
+                "Developing reliable software solutions with clean code, practical features, and a focus on performance.",
             img: serIcon2,
             pos: "self-end",
         },
@@ -30,7 +30,7 @@ export default function Skills() {
             id: 3,
             title: "System Development",
             content:
-                "Seaque ipsa quae ab illo inven tore veritatis et qua si architecto beatae atis et sopno vitae.",
+                "Creating scalable systems that connect different components and provide efficient solutions for real-world needs.",
             img: serIcon3,
             pos: "self-start",
         },
@@ -38,7 +38,7 @@ export default function Skills() {
             id: 4,
             title: "Security Analysis",
             content:
-                "Seaque ipsa quae ab illo inven tore veritatis et qua si architecto beatae atis et sopno vitae.",
+                "Understanding application security and following best practices to build safer and more reliable web applications.",
             img: serIcon4,
             pos: "self-end",
         },

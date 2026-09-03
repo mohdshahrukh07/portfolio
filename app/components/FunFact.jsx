@@ -37,9 +37,7 @@ export default function FunFact() {
                     </h1>
 
                     <p className="text-[#9098bb] mt-3 lg:mt-4 text-base sm:text-lg lg:text-xl font-normal leading-relaxed max-w-2xl">
-                        Sed ut perspiciatis unde omnis iste natus kobita tumi sopno
-                        charini hoye khbor nio na sit volup sundori toma amar tumi
-                        nili mar tatem accusantium dolore.
+                        I enjoy turning ideas into practical solutions by writing clean code, solving real-world problems, and building reliable web applications that are simple, responsive, and easy to use.
                     </p>
                 </div>
 
@@ -50,7 +48,7 @@ export default function FunFact() {
                         {/* Experience */}
                         <div className="min-h-32 sm:min-h-36 lg:min-h-40 border border-[#474851] rounded-xl flex justify-center px-3 gap-3 sm:gap-4 items-center">
                             <h1 className="text-5xl sm:text-6xl lg:text-7xl text-[#80db66] font-medium">
-                                12
+                                1
                             </h1>
 
                             <h1 className="text-base sm:text-lg lg:text-xl text-white font-medium">
@@ -62,7 +60,7 @@ export default function FunFact() {
                         {/* Clients */}
                         <div className="min-h-32 sm:min-h-36 lg:min-h-40 border border-[#474851] rounded-xl flex justify-center px-3 gap-3 sm:gap-4 items-center">
                             <h1 className="text-5xl sm:text-6xl lg:text-7xl text-[#80db66] font-medium">
-                                2K
+                                0K
                             </h1>
 
                             <h1 className="text-base sm:text-lg lg:text-xl text-white font-medium">
@@ -75,7 +73,7 @@ export default function FunFact() {
                         {/* Projects */}
                         <div className="min-h-32 sm:min-h-36 lg:min-h-40 border border-[#474851] rounded-xl flex justify-center px-3 gap-3 sm:gap-4 items-center">
                             <h1 className="text-5xl sm:text-6xl lg:text-7xl text-[#80db66] font-medium">
-                                4K
+                                4
                             </h1>
 
                             <h1 className="text-base sm:text-lg lg:text-xl text-white font-medium">
@@ -88,7 +86,7 @@ export default function FunFact() {
                         {/* Products */}
                         <div className="min-h-32 sm:min-h-36 lg:min-h-40 border border-[#474851] rounded-xl flex justify-center px-3 gap-3 sm:gap-4 items-center">
                             <h1 className="text-5xl sm:text-6xl lg:text-7xl text-[#80db66] font-medium">
-                                30
+                                0
                             </h1>
 
                             <h1 className="text-base sm:text-lg lg:text-xl text-white font-medium">

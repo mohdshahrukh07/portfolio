@@ -1,29 +1,37 @@
 "use client";
 
 import port1 from "../../public/assets/port-img1.webp";
+import shot1 from "../../public/assets/shot1.png";
+import shot2 from "../../public/assets/shot2.png";
+import shot3 from "../../public/assets/shot3.png";
+import shot4 from "../../public/assets/shot4.png";
 import Image from "next/image";
 
 export default function Projets() {
     const projects = [
         {
             id: 1,
-            heading: "WEB DESIGN",
-            title: "Software Design for eThemeStudio",
+            heading: "Chat App",
+            title: "Real-Time Chat Application",
+            img: shot1,
         },
         {
             id: 2,
             heading: "COMPLERE",
             title: "Quality Compliance Platform",
+            img: shot2,
         },
         {
             id: 3,
             heading: "HOTAL MANAGEMENT",
             title: "Complete Hotel Booking System",
+            img: shot3,
         },
         {
             id: 4,
             heading: "PORTFOLIO",
             title: "Personal Portfolio Website",
+            img: shot4,
         },
     ];
 
@@ -108,7 +116,7 @@ export default function Projets() {
                                     "
                                 >
                                     <Image
-                                        src={port1}
+                                        src={project.img || port1}
                                         alt={project.title}
                                         priority={project.id === 1}
                                         className="

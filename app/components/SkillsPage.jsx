@@ -182,10 +182,7 @@ export default function EducationPage() {
 
                         max-sm:text-base
                     ">
-                        Sed ut perspiciatis unde omnis iste natus Sed ut
-                        perspiciatis unde omnis iste natus kobita tumi sopno
-                        charini hoye khbor nio na sit voluptatem accusantium
-                        dolore.
+                        I continuously learn and improve my skills by working with modern technologies, building real-world projects, and exploring better ways to create fast, responsive, and user-friendly web applications.
                     </p>
 
                 </div>

@@ -17,7 +17,7 @@ export default function Header() {
     const [scrollY, setScrollY] = useState(0);
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+    const [downloading, setDownloading] = useState(false);
     useEffect(() => {
         const handleScroll = () => {
             setScrollY(window.scrollY);
@@ -63,7 +63,16 @@ export default function Header() {
             window.history.replaceState(null, "", `#${id}`);
         }
     };
-
+  const handleDownload =() => {
+    setDownloading(true);
+    const link = document.createElement("a")
+    link.href = "/assets/MOHD_SHAHRUKH_RESUME.pdf"
+    link.download = "MOHD_SHAHRUKH_RESUME.pdf"
+    link.click()
+    setTimeout(() => {
+      setDownloading(false);
+    }, 1500);
+  }
     return (
         <>
 
@@ -176,6 +185,7 @@ export default function Header() {
 
                         {/* Desktop Download Button */}
                         <button
+                            onClick={handleDownload}
                             className={`
                                 rounded-md
                                 border
@@ -194,7 +204,7 @@ export default function Header() {
                                 }
                             `}
                         >
-                            DOWNLOAD CV
+                        {downloading ? "DOWNLOADING..." : "DOWNLOAD CV"}
                         </button>
                     </nav>
 
@@ -392,6 +402,7 @@ export default function Header() {
                 {/* Mobile Download Button */}
                 <div className="px-5 pt-4">
                     <button
+                    onClick={handleDownload}
                         className="
                             w-full
                             rounded-md
@@ -408,7 +419,7 @@ export default function Header() {
                             hover:text-black
                         "
                     >
-                        DOWNLOAD CV
+                        {downloading ? "DOWNLOADING..." : "DOWNLOAD CV"}
                     </button>
                 </div>
             </aside>
